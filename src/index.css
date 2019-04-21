@@ -12,3 +12,250 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.form-wrapper {
+  background-color: white;
+  top: 20px;
+  right: 50px;
+  width: 450px;
+  height: 100vh;
+  overflow: auto;
+  z-index: 1;
+}
+
+.accordion__heading {
+  padding: 5px;
+}
+
+.accordion__panel {
+  background-color: beige;
+  padding: 10px 20px;
+}
+
+/***** map view ***/
+.main-component {
+  display: flex;
+}
+
+.map {
+  height: 100vh;
+  flex: 2;
+}
+
+.info-text-wrap {
+  padding: 26px 16px;
+}
+
+.info-title {
+  font-style: normal;
+font-weight: bold;
+font-size: 23px;
+line-height: 33px;
+}
+
+.info-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  margin-bottom: 39px;
+
+color: #112211;
+}
+
+.place-info_img-wrap {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.place-info_img-wrap img {
+  width: 100%;
+}
+
+.info-one-item-link {
+  font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+
+color: #112211;
+}
+
+.info-one-item-link:before {
+    margin: 8px;
+    content: "•"; /* Insert content that looks like bullets */
+    font-size: 24px;
+    color: #03A9F4; /* Or a color you prefer */
+  
+}
+
+.info-one-item-link > span {
+  padding: 32px 0;
+  display: inline-block;
+  flex: 2;
+  cursor: pointer;
+}
+
+.info-one-item-link:not(:last-child) > span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.info-one-item-link:not(:last-child) {
+ 
+}
+
+.info-items {
+  border-top: 2px solid rgba(0, 0, 0, 0.35);
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.one-place-info {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 450px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.one-place-info-close {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  top: 15px;
+  right: 30px;
+  font-size: 24px;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.active-icon {
+  width: 25px;
+  height: 25px;
+}
+/***** map view ***/
+
+/****** grid-view styles *******/
+
+.filter {
+  padding: 5px 12px;
+  margin-top: 56px;
+}
+
+.filter-tag {
+  cursor: pointer;
+  padding: 13px 24px;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  color: white;
+
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter-tag.selected {
+  background-color: #FBC02D;
+}
+
+.filter-tag:not(:last-child) {
+ margin-right: 15px;
+}
+
+.new-tag {
+  position: absolute;
+  right: 15px;
+  top: 56px;
+  padding: 13px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  background-color: #42A5F5;
+}
+
+.new-tag a {
+  color: white;
+}
+
+.grid-view {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.grid-item {
+  margin: 15px;
+  min-width: calc(33% - 30px);
+  max-width: calc(33% - 30px);
+  cursor: pointer;
+  min-height: 284px;
+  max-height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.grid-item-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #FBC02D;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.card-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 0 8px;
+}
+
+.card-title {
+  
+font-style: normal;
+font-weight: bold;
+font-size: 23px;
+line-height: 33px;
+}
+
+.card-description {
+  
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+}
+
+.card-photo-wrap {
+  height: 100%;
+}
+
+.card-photo-wrap img {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 3px;
+}
+
+/****** grid-view styles *******/
